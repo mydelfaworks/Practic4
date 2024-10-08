@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Формы 3</title>
+        <style>
+            h1 {
+                color: red;
+            }
+            h2 {
+                color: orange;
+            }
+            legend {
+                color: blue;
+            }
+            input {
+                background-color: #d1ccc8;
+                border-radius: 10px;
+                border-width: 1px;
+                border-color: blueviolet;
+            }
+            button {
+                border-style: solid;
+                border-radius: 10px;
+                border-color: #3939aa;
+                border-width: 1px;
+                color: #3939aa;
+                background-color: #d1ccc8;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Конференция "Современные веб-технологии"</h1>
+        <img src="./image.png" width="210px">
+        <p>Добро пожаловать на регистрацию участников конференции "Современные веб-технологии". Пожалуйста, заполните формы ниже, чтобы зарегистрироваться.</p>
+        <h2>Основная информация</h2>
+        <form>
+            <fieldset>
+                <legend><i><strong>Основная информация</strong></i></legend>
+                <label>Имя: <input type="text" name="name" required></label><br><br>
+                <label>Фамилия: <input type="text" name="lastname" required></label><br><br>
+                <label>Электронная почта: <input type="email" name="email" required></label><br><br>
+                <label>Номер телефона: <input type="tel" name="phonenum" required></label><br><br>
+                <button type="submit"><strong>Отправить</strong></button>
+            </fieldset>
+        </form>
+    </body>
+
+</html>

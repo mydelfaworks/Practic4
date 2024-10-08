@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Доп формы</title>
+    </head>
+
+    <body>
+        <form>
+            <fieldset>
+                <legend>Бронирование отеля</legend>
+                <label>Имя: <input type="text" name="name" required></label><br><br>
+                <label>Фамилия: <input type="text" name="lastname" required></label><br><br>
+                <label>Email: <input type="email" name="email" required></label><br><br>
+                <label>Телефон: <input type="tel" name="phonenum" required></label><br><br>
+                <label>Дата заезда: <input type="date" name="checkindate" required></label><br><br>
+                <label>Дата выезда: <input type="date" name="checkoutdate" required></label><br><br>
+                <label>Количество номеров: <input type="number" name="numbers" required></label><br><br>
+                <label>Количество взрослых: <input type="number" name="adult" required></label><br>
+                <label>Количество детей: <input type="number" name="childs" required></label><br>
+                <label>Тип номера: <select name="hoteltype" required>
+                    <option value="none" selected disabled>Выберете тип номера</option>
+                    <option value="bisness">Бизнесс-класс</option>
+                </select>
+                </label><br><br>
+                <label>Особые пожелания: <textarea name="pozhelania"></textarea></label><br>
+                <label><input type="checkbox" name="agree" required>Я согласен с <a href="https://github.com/nachosteam/nachos-console/blob/main/LICENSE" target="_blank">Условиями бронирования</a></label>
+                <br>
+                <button type="submit">Забронировать</button>
+            </fieldset>
+        </form>
+    </body>
+
+</html>
